@@ -1,0 +1,525 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Poppins:wght@200;300;400;600&display=swap");
+
+:root {
+  --blue-800: hsl(222, 57%, 9%); 
+  --blue-500: hsl(222, 57%, 20%);
+  --blue-400: hsl(202, 66%, 20%); 
+  --blue-300: hsl(192, 77%, 30%);
+  --blue-200: hsl(192, 77%, 42%); 
+  --orange-400: hsl(16, 84%, 51%); 
+  --green-200: hsl(55, 44%, 55%); 
+  
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Oswald", sans-serif;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+.wrapper {
+  width: clamp(300px, 100%, 5100px);
+  margin: 0 auto;
+}
+
+.content {
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* =-                 H E A D E R                 -= */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+.header {
+  position: relative;
+  width: 100%;
+  z-index: 9999;
+}
+
+.header__wrapper {
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 830px;
+  width: 100%;
+  padding: 1rem;
+  margin: 0 auto;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  background-color: var(--blue-800);
+} 
+
+.logo {
+  width: clamp(50px, 10vw, 100px);
+  border: none;
+  border-radius: 100px;
+}
+
+.nav.active {
+  bottom: -140px;
+  transition: bottom 0.5s ease-in-out;
+}
+
+.nav {
+  position: absolute;
+  bottom: 1400px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 1rem 3rem;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--blue-400);
+  color: white;
+  outline: 1px solid var(--blue-200);
+
+  transition: bottom 0.5s ease-in-out;
+}
+
+.nav a {
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: clamp(16px, 4vw, 22px);
+}
+
+.hamb {
+  cursor: pointer;
+  font-size: clamp(25px, 5vw, 50px);
+  color: white;
+}
+
+.btn__access {
+  cursor: pointer;
+  font-size: clamp(16px, 4vw, 22px);
+  background-color: var(--orange-400);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* =-                   H E R O                   -= */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+.hero {
+  width: 100%;
+}
+
+.hero__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url(assets/prop-girl-2000x1500.jpeg) no-repeat center/cover;
+  z-index: 1;
+}
+
+.hero__wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8rem 1rem 4rem;
+  color: white;
+  z-index: 10;
+}
+
+.hero__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.hero__text .title {
+  font-size: clamp(40px, 10vw, 60px);
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  max-width: 15ch;
+}
+
+.hero__text p {
+  max-width: 30ch;
+  font-size: clamp(16px, 4vw, 22px);
+}
+
+.btn__access.hero {
+  margin: 3rem auto 30px;
+  max-width: 400px;
+}
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* =-           P R E S E N T A T I O N           -= */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+.present {
+  width: 100%;
+  background-color: var(--blue-500);
+}
+
+.present__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 2rem 1rem 3rem;
+}
+
+.present__wrapper h2 {
+  font-size: clamp(30px, 10vw, 50px);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 20px auto 10px;
+}
+
+.present__wrapper p {
+  font-size: clamp(16px, 4vw, 22px);
+  margin: 30px auto;
+  line-height: 1.6;
+  max-width: 27ch;
+}
+
+.btn__access.present {
+  max-width: 400px;
+  background-color: var(--orange-400);
+}
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* =-             A D V A N T A G E S             -= */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+.advant {
+  width: 100%;
+  background-color: var(--blue-200);
+}
+
+.advant__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem 1rem 3rem;
+}
+
+.advant__wrapper h2 {
+  font-size: clamp(30px, 10vw, 50px);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 20px auto 70px;
+}
+
+.advant__card-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.advant__card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 350px;
+  padding: 2.8rem 1rem 2rem;
+  background-color: white;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.advant__card .icon {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: clamp(2rem, 5vw, 4rem);
+  border: none;
+  border-radius: 100px;
+  aspect-ratio: 1 / 1;
+  padding: 10px;
+  background-color: var(--blue-800);
+  color: var(--orange-400);
+}
+
+.advant__card .icon.flexi {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+}
+
+.advant__card .card__title {
+  font-size: clamp(18px, 4vw, 22px);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.advant__card .card__text {
+  font-size: clamp(14px, 4vw, 16px);
+  line-height: 1.6;
+}
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* =-          W H A T   Y O U   G E T            -= */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+.get {
+  width: 100%;
+  background-color: var(--blue-300);
+}
+
+.get__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  color: white;
+  padding: 2rem 1rem;
+}
+
+.get__wrapper h2 {
+  text-align: center;
+  font-size: clamp(30px, 10vw, 50px);
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin: 20px auto 40px;
+}
+
+.get__wrapper ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-bottom: 40px;
+  outline: 1px solid var(--blue-800);
+}
+
+.get__wrapper .check {
+  color: rgb(0, 255, 0);
+  margin-right: 15px;
+}
+
+.get__wrapper li {
+  font-size: clamp(16px, 4vw, 22px);
+  padding-block: 20px;
+  width: 100%;
+}
+
+.get__wrapper li:not(:last-child) {
+  border-bottom: 1px solid var(--blue-800);
+}
+
+.btn__access.get {
+  text-align: center;
+  margin: 10px auto;
+  max-width: 400px;
+  background-color: var(--orange-400);
+}
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* =-           T E S T I M O N I A L S           -= */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+.testi {
+  width: 100%;
+  background-color: var(--blue-500);
+}
+
+.testi__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 2rem 1rem 3rem;
+}
+
+.testi__wrapper h2 {
+  font-size: clamp(30px, 10vw, 50px);
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin: 20px auto 40px;
+}
+
+.testi__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 350px;
+  padding: 1rem 1rem 2rem;
+  background-color: white;
+  color: black;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.testi__card img {
+  width: clamp(150px, 10vw, 200px);
+  aspect-ratio: 1 / 1;
+  border-radius: 100px;
+  margin: 30px auto;
+}
+
+.testi__card p {
+  font-size: clamp(16px, 4vw, 22px);
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.testi h5 {
+  font-size: clamp(14px, 4vw, 16px);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* =-                    C T A                    -= */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+.cta {
+  width: 100%;
+  background-color: var(--blue-200);
+}
+
+.cta__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 2rem 1rem;
+}
+
+.cta__wrapper h2 {
+  font-size: clamp(30px, 10vw, 50px);
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin: 20px auto;
+}
+
+.cta__wrapper p {
+  font-size: clamp(16px, 4vw, 22px);
+  line-height: 1.6;
+  max-width: 35ch;
+  margin-bottom: 30px;
+}
+
+.cta__wrapper img {
+  margin-block: 15px;
+  border-radius: 5px;
+}
+
+.btn__access.cta {
+  text-align: center;
+  margin: 10px auto;
+  max-width: 400px;
+  background-color: var(--orange-400);
+  margin-top: 40px;
+}
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* =-                 F O O T E R                 -= */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+.footer {
+  width: 100%;
+  background-color: var(--blue-800);
+}
+
+.footer__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 500px;
+  margin: 0 auto;
+  color: white;
+  padding: 2rem 1rem;
+}
+
+.footer__wrapper p {
+  font-size: clamp(16px, 4vw, 22px);
+  line-height: 1.6;
+}
