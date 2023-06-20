@@ -17,50 +17,57 @@
 
       <header class="header">
         <div class="header__wrapper">
-          <img class="logo" src="assets/logo.jpg" alt="logo">
-          <nav class="nav">
-            <a>Home</a>
-            <a>Sobre</a>
-            <a>Contato</a>
-          </nav>
-          <a class="btn__access">Adquirir acesso</a>
-          <i class="hamb fa-solid fa-bars"></i>
+          <div class="header__content">
+            <img class="logo" src="assets/logo.jpg" alt="logo">
+            <nav class="nav">
+              <a href="#home">Home</a>
+              <a href="#present">Sobre</a>
+              <a>Contato</a>
+            </nav>
+            <a class="btn__access">Adquirir acesso</a>
+            <i class="hamb fa-solid fa-bars"></i>
+          </div>
         </div>
       </header>
 
       <main>
 
-        <section class="hero">
+        <section id="home" class="hero">
           <div class="hero__wrapper">
             <div class="hero__content">
               <div class="hero__text">
-                <h1 class="title">Curso Olhos que Falam</h1>
-                <p>Descubra o mundo da geração de imagens por IA! <br> Aprenda a criar imagens incríveis, rostos
+                <h1 class="title"><span>Curso</span> Olhos que Falam</h1>
+                <p>Descubra o mundo da geração de imagens por <strong>Inteligência Artificial!</strong> <br> Aprenda a criar imagens incríveis, rostos
                   realistas e
                   transformações surpreendentes.</p>
                 <a class="btn__access hero">Adquirir acesso</a>
               </div>
               <div class="hero__video">
-                <video autoplay loop muted>
-                  <source src="assets/campanha.mp4" type="video/mp4">
-                </video>
+                <iframe class="video" min-width="560" min-height="315" src="https://www.youtube.com/embed/53kmRGSSjek" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
               </div>
             </div>
           </div>
         </section>
 
-        <section class="present">
+        <section id="present" class="present">
           <div class="present__wrapper">
             <h2>Sobre o curso</h2>
-            <p>O curso Olhos que Falam é uma jornada de aprendizado para todos que desejam se aventurar no mundo da
-              geração de imagens por Inteligência Artificial.</p>
-            <img src="assets/antes-e-depois-001.jpg" alt="">
-            <p>Este curso é ideal tanto para iniciantes que estão começando a explorar as possibilidades da IA, quanto
-              para aqueles que já possuem alguma experiência na área.</p>
-            <img src="assets/antes-e-depois-003.png" alt="">
-            <p>Aqui, você aprenderá não apenas o básico da
-              geração de imagens, mas também uma técnica exclusiva para deixar os rostos das suas imagens mais
-              realistas.</p>
+            <div class="antes-01">
+              <p>O curso Olhos que Falam é uma jornada de aprendizado para todos que desejam se aventurar no mundo da
+                geração de imagens por Inteligência Artificial.</p>
+              <img src="assets/antes-e-depois-001.jpg" alt="">
+            </div>
+            <div class="antes-02">
+              <img src="assets/antes-e-depois-003.png" alt="">
+              <p>Este curso é ideal tanto para iniciantes que estão começando a explorar as possibilidades da IA, quanto
+                para aqueles que já possuem alguma experiência na área.</p>
+            </div>
+            <div class="antes-03">
+              <p>Aqui, você aprenderá não apenas o básico da
+                geração de imagens, mas também uma técnica exclusiva para deixar os rostos das suas imagens mais
+                realistas.</p>
+              <img src="assets/antes-e-depois-006.png" alt="">
+            </div>
             <a class="btn__access present">Adquirir acesso</a>
           </div>
         </section>
@@ -127,17 +134,30 @@
           <div class="testi__wrapper">
             <h2>Testemunhos</h2>
             <div class="testi__card">
-              <img src="assets/testi-pic-001.jpg" alt="">
+              <img class="testi__pic" src="assets/testi-pic-001.jpg" alt="">
+              <img class="stars" src="assets/5_stars-removebg-preview.png" alt="">
               <p>É incrível como a qualidade das minhas imagens melhoraram, e muito!</p>
               <h5>Edvaldo Santiago</h5>
             </div>
           </div>
         </section>
 
+        <section class="pdf">
+          <div class="pdf__wrapper">
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta consectetur, ullam ut rerum deserunt
+              nihil.</p>
+            <form>
+              <input class="pdf__email" type="email" name="email" id="email" placeholder="Insira seu e-mail">
+              <input class="pdf__submit" type="submit" value="Enviar">
+            </form>
+          </div>
+        </section>
+
         <section class="cta">
           <div class="cta__wrapper">
             <h2>Acesse o curso</h2>
-            <p>Torne-se um mestre da arte digital com nosso curso "Olhos que Falam". Inscreva-se agora e liberte sua
+            <p><strong>Torne-se um mestre da arte digital</strong> com nosso curso Olhos que Falam. Inscreva-se agora e liberte sua
               criatividade!</p>
             <img src="assets/antes-e-depois-004.png" alt="">
             <img src="assets/antes-e-depois-005.png" alt="">
