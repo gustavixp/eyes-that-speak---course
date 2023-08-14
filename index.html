@@ -1,183 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script
+            src="https://kit.fontawesome.com/52e9ba2d77.js"
+            crossorigin="anonymous"
+        ></script>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <title>Curso Olhos que Falam</title>
+    </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://kit.fontawesome.com/52e9ba2d77.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="style.css">
-  <title>Curso Olhos que Falam</title>
-</head>
+    <body>
+        <div class="wrapper">
+            <div class="container">
+                <header class="header">
+                    <div class="header__wrapper">
+                        <div class="header__content">
+                            <img
+                                class="logo"
+                                src="assets/logo.jpg"
+                                alt="logo"
+                            />
+                            <nav class="nav">
+                                <a href="#home">Home</a>
+                                <a href="#present">Sobre</a>
+                                <a>Contato</a>
+                            </nav>
+                            <a class="btn__access">Adquirir acesso</a>
+                            <i class="hamb fa-solid fa-bars"></i>
+                        </div>
+                    </div>
+                </header>
 
-<body>
+                <main>
+                    <section id="home" class="hero">
+                        <div class="hero__wrapper">
+                            <div class="hero__content">
+                                <div class="hero__text">
+                                    <h1 class="title">
+                                        <span>Curso</span> Olhos que Falam
+                                    </h1>
+                                    <p>
+                                        Descubra o mundo da geração de imagens
+                                        por
+                                        <strong
+                                            >Inteligência Artificial!</strong
+                                        >
+                                        <br />
+                                        Aprenda a criar imagens incríveis,
+                                        rostos realistas e transformações
+                                        surpreendentes.
+                                    </p>
+                                    <a class="btn__access hero"
+                                        >Adquirir acesso</a
+                                    >
+                                </div>
+                                <div class="hero__video">
+                                    <iframe
+                                        class="video"
+                                        min-width="560"
+                                        min-height="315"
+                                        src="https://www.youtube.com/embed/53kmRGSSjek"
+                                        title="YouTube video player"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen
+                                    ></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
 
-  <div class="wrapper">
-    <div class="container">
+                    <section id="present" class="present">
+                        <div class="present__wrapper">
+                            <h2>Sobre o curso</h2>
+                            <div class="antes-01">
+                                <p>
+                                    O curso Olhos que Falam é uma jornada de
+                                    aprendizado para todos que desejam se
+                                    aventurar no mundo da geração de imagens por
+                                    Inteligência Artificial.
+                                </p>
+                                <img
+                                    src="assets/antes-e-depois-001.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="antes-02">
+                                <img
+                                    src="assets/antes-e-depois-003.png"
+                                    alt=""
+                                />
+                                <p>
+                                    Este curso é ideal tanto para iniciantes que
+                                    estão começando a explorar as possibilidades
+                                    da IA, quanto para aqueles que já possuem
+                                    alguma experiência na área.
+                                </p>
+                            </div>
+                            <div class="antes-03">
+                                <p>
+                                    Aqui, você aprenderá não apenas o básico da
+                                    geração de imagens, mas também uma técnica
+                                    exclusiva para deixar os rostos das suas
+                                    imagens mais realistas.
+                                </p>
+                                <img
+                                    src="assets/antes-e-depois-006.png"
+                                    alt=""
+                                />
+                            </div>
+                            <a class="btn__access present">Adquirir acesso</a>
+                        </div>
+                    </section>
 
-      <header class="header">
-        <div class="header__wrapper">
-          <div class="header__content">
-            <img class="logo" src="assets/logo.jpg" alt="logo">
-            <nav class="nav">
-              <a href="#home">Home</a>
-              <a href="#present">Sobre</a>
-              <a>Contato</a>
-            </nav>
-            <a class="btn__access">Adquirir acesso</a>
-            <i class="hamb fa-solid fa-bars"></i>
-          </div>
+                    <section class="advant">
+                        <div class="advant__wrapper">
+                            <h2>Vantagens</h2>
+                            <div class="advant__card-wrapper">
+                                <div class="advant__card">
+                                    <i class="icon fa-solid fa-users"></i>
+                                    <h3 class="card__title">
+                                        Acessível para todos os níveis de
+                                        habilidade
+                                    </h3>
+                                    <p class="card__text">
+                                        Os compradores deste curso podem ser
+                                        estudantes, profissionais de design,
+                                        artistas digitais, entusiastas de IA e
+                                        qualquer pessoa que deseje aprender a
+                                        criar imagens realistas com o uso de
+                                        técnicas de text-to-image.
+                                    </p>
+                                </div>
+
+                                <div class="advant__card">
+                                    <i
+                                        class="icon flexi fa-solid fa-calendar-days"
+                                    ></i>
+                                    <h3 class="card__title">
+                                        Aprendizado flexível no seu próprio
+                                        ritmo
+                                    </h3>
+                                    <p class="card__text">
+                                        Com aulas claras e objetivas, aprenda no
+                                        seu ritmo, sem pressa, seguindo suas
+                                        próprias necessidades e disponibilidade
+                                        de tempo.
+                                    </p>
+                                </div>
+
+                                <div class="advant__card">
+                                    <i class="icon fa-solid fa-computer"></i>
+                                    <h3 class="card__title">
+                                        Não precisa de um computador super
+                                        potente, tudo é feito online
+                                    </h3>
+                                    <p class="card__text">
+                                        Não é necessário ter conhecimento em
+                                        programação ou possuir um computador
+                                        potente. Você terá acesso a ferramentas
+                                        gratuitas e disponíveis online, além de
+                                        modelos prompts para ChatGPT e Bing AI,
+                                        garantindo resultados criativos e
+                                        compatíveis com a geração de imagens.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="get">
+                        <div class="get__wrapper">
+                            <h2>O que você irá receber</h2>
+                            <ul>
+                                <li>
+                                    <i class="check fa-solid fa-check"></i
+                                    >Técnica exclusiva de aprimoramento de
+                                    rostos;
+                                </li>
+                                <li>
+                                    <i class="check fa-solid fa-check"></i
+                                    >Modelos prompts para ChatGPT e Bing AI;
+                                </li>
+                                <li>
+                                    <i class="check fa-solid fa-check"></i
+                                    >Criação de rostos realistas como um
+                                    profissional;
+                                </li>
+                                <li>
+                                    <i class="check fa-solid fa-check"></i
+                                    >Domínio das habilidades necessárias para
+                                    levar suas criações a um novo nível;
+                                </li>
+                                <li>
+                                    <i class="check fa-solid fa-check"></i>Dicas
+                                    para tornar as imagens mais realistas;
+                                </li>
+                                <li>
+                                    <i class="check fa-solid fa-check"></i
+                                    >Templates de prompts para gerar imagens
+                                    lindas.
+                                </li>
+                            </ul>
+                            <a class="btn__access get">Adquirir acesso</a>
+                        </div>
+                    </section>
+
+                    <section class="testi">
+                        <div class="testi__wrapper">
+                            <h2>Testemunhos</h2>
+                            <div class="testi__card">
+                                <img
+                                    class="testi__pic"
+                                    src="assets/testi-pic-001.jpg"
+                                    alt=""
+                                />
+                                <img
+                                    class="stars"
+                                    src="assets/5_stars-removebg-preview.png"
+                                    alt=""
+                                />
+                                <p>
+                                    É incrível como a qualidade das minhas
+                                    imagens melhoraram, e muito!
+                                </p>
+                                <h5>Edvaldo Santiago</h5>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="pdf">
+                        <div class="pdf__wrapper">
+                            <h2>Lorem ipsum dolor sit amet.</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Dicta consectetur, ullam ut
+                                rerum deserunt nihil.
+                            </p>
+                            <form>
+                                <input
+                                    class="pdf__email"
+                                    type="email"
+                                    name="email"
+                                    id="email"
+                                    placeholder="Insira seu e-mail"
+                                />
+                                <input
+                                    class="pdf__submit"
+                                    type="submit"
+                                    value="Enviar"
+                                />
+                            </form>
+                        </div>
+                    </section>
+
+                    <section class="cta">
+                        <div class="cta__wrapper">
+                            <h2>Acesse o curso</h2>
+                            <p>
+                                <strong
+                                    >Torne-se um mestre da arte digital</strong
+                                >
+                                com nosso curso Olhos que Falam. Inscreva-se
+                                agora e liberte sua criatividade!
+                            </p>
+                            <div class="swiper">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper"></div>
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>                              
+                                </div>
+                            </div>
+                            <a class="btn__access cta">Adquirir acesso</a>
+                        </div>
+                    </section>
+
+                    <footer class="footer">
+                        <div class="footer__wrapper">
+                            <img
+                                class="logo"
+                                src="assets/logo.jpg"
+                                alt="logo"
+                            />
+                            <p>© 2023 - Olhos que Falam</p>
+                        </div>
+                    </footer>
+                </main>
+            </div>
         </div>
-      </header>
 
-      <main>
-
-        <section id="home" class="hero">
-          <div class="hero__wrapper">
-            <div class="hero__content">
-              <div class="hero__text">
-                <h1 class="title"><span>Curso</span> Olhos que Falam</h1>
-                <p>Descubra o mundo da geração de imagens por <strong>Inteligência Artificial!</strong> <br> Aprenda a criar imagens incríveis, rostos
-                  realistas e
-                  transformações surpreendentes.</p>
-                <a class="btn__access hero">Adquirir acesso</a>
-              </div>
-              <div class="hero__video">
-                <iframe class="video" min-width="560" min-height="315" src="https://www.youtube.com/embed/53kmRGSSjek" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="present" class="present">
-          <div class="present__wrapper">
-            <h2>Sobre o curso</h2>
-            <div class="antes-01">
-              <p>O curso Olhos que Falam é uma jornada de aprendizado para todos que desejam se aventurar no mundo da
-                geração de imagens por Inteligência Artificial.</p>
-              <img src="assets/antes-e-depois-001.jpg" alt="">
-            </div>
-            <div class="antes-02">
-              <img src="assets/antes-e-depois-003.png" alt="">
-              <p>Este curso é ideal tanto para iniciantes que estão começando a explorar as possibilidades da IA, quanto
-                para aqueles que já possuem alguma experiência na área.</p>
-            </div>
-            <div class="antes-03">
-              <p>Aqui, você aprenderá não apenas o básico da
-                geração de imagens, mas também uma técnica exclusiva para deixar os rostos das suas imagens mais
-                realistas.</p>
-              <img src="assets/antes-e-depois-006.png" alt="">
-            </div>
-            <a class="btn__access present">Adquirir acesso</a>
-          </div>
-        </section>
-
-        <section class="advant">
-          <div class="advant__wrapper">
-            <h2>Vantagens</h2>
-            <div class="advant__card-wrapper">
-              <div class="advant__card">
-                <i class="icon fa-solid fa-users"></i>
-                <h3 class="card__title">
-                  Acessível para todos os níveis de habilidade
-                </h3>
-                <p class="card__text">
-                  Os compradores deste curso podem ser estudantes, profissionais de design, artistas digitais,
-                  entusiastas de IA e qualquer pessoa que deseje aprender a criar imagens realistas com o uso de
-                  técnicas de text-to-image.
-                </p>
-              </div>
-
-              <div class="advant__card">
-                <i class="icon flexi fa-solid fa-calendar-days"></i>
-                <h3 class="card__title">
-                  Aprendizado flexível no seu próprio ritmo
-                </h3>
-                <p class="card__text">
-                  Com aulas claras e objetivas, aprenda no seu ritmo, sem pressa, seguindo suas próprias necessidades e
-                  disponibilidade de tempo.
-                </p>
-              </div>
-
-              <div class="advant__card">
-                <i class="icon fa-solid fa-computer"></i>
-                <h3 class="card__title">
-                  Não precisa de um computador super potente, tudo é feito online
-                </h3>
-                <p class="card__text">
-                  Não é necessário ter conhecimento em programação ou possuir um computador potente. Você terá acesso a
-                  ferramentas gratuitas e disponíveis online, além de modelos prompts para ChatGPT e Bing AI, garantindo
-                  resultados criativos e compatíveis com a geração de imagens.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="get">
-          <div class="get__wrapper">
-            <h2>O que você irá receber</h2>
-            <ul>
-              <li><i class="check fa-solid fa-check"></i>Técnica exclusiva de aprimoramento de rostos;</li>
-              <li><i class="check fa-solid fa-check"></i>Modelos prompts para ChatGPT e Bing AI;</li>
-              <li><i class="check fa-solid fa-check"></i>Criação de rostos realistas como um profissional;</li>
-              <li><i class="check fa-solid fa-check"></i>Domínio das habilidades necessárias para levar suas criações a
-                um novo nível;</li>
-              <li><i class="check fa-solid fa-check"></i>Dicas para tornar as imagens mais realistas;</li>
-              <li><i class="check fa-solid fa-check"></i>Templates de prompts para gerar imagens lindas.</li>
-            </ul>
-            <a class="btn__access get">Adquirir acesso</a>
-          </div>
-        </section>
-
-        <section class="testi">
-          <div class="testi__wrapper">
-            <h2>Testemunhos</h2>
-            <div class="testi__card">
-              <img class="testi__pic" src="assets/testi-pic-001.jpg" alt="">
-              <img class="stars" src="assets/5_stars-removebg-preview.png" alt="">
-              <p>É incrível como a qualidade das minhas imagens melhoraram, e muito!</p>
-              <h5>Edvaldo Santiago</h5>
-            </div>
-          </div>
-        </section>
-
-        <section class="pdf">
-          <div class="pdf__wrapper">
-            <h2>Lorem ipsum dolor sit amet.</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta consectetur, ullam ut rerum deserunt
-              nihil.</p>
-            <form>
-              <input class="pdf__email" type="email" name="email" id="email" placeholder="Insira seu e-mail">
-              <input class="pdf__submit" type="submit" value="Enviar">
-            </form>
-          </div>
-        </section>
-
-        <section class="cta">
-          <div class="cta__wrapper">
-            <h2>Acesse o curso</h2>
-            <p><strong>Torne-se um mestre da arte digital</strong> com nosso curso Olhos que Falam. Inscreva-se agora e liberte sua
-              criatividade!</p>
-            <img src="assets/antes-e-depois-004.png" alt="">
-            <img src="assets/antes-e-depois-005.png" alt="">
-            <a class="btn__access cta">Adquirir acesso</a>
-          </div>
-        </section>
-
-        <footer class="footer">
-          <div class="footer__wrapper">
-            <img class="logo" src="assets/logo.jpg" alt="logo">
-            <p>© 2023 - Olhos que Falam</p>
-          </div>
-        </footer>
-
-      </main>
-
-    </div>
-  </div>
-
-  <script src="index.js"></script>
-</body>
-
+        <script src="index.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    </body>
 </html>
